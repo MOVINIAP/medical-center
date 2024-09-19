@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/modal.css"> <!-- Add this line -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
         
     <title>Registro</title>
     
@@ -46,89 +47,88 @@ if($_POST){
 
 <center>
 <div class="container">
-    <table border="0">
-        <tr>
-            <td colspan="2">
-                <p class="header-text">Empecemos</p>
-                <p class="sub-text">Añade tus datos personales para continuar</p>
-            </td>
-        </tr>
-        <tr>
-            <form action="" method="POST" >
-            <td class="label-td" colspan="2">
-                <label for="name" class="form-label">Nombre: </label>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td">
-                <input type="text" name="fname" class="input-text" placeholder="Nombre" required>
-            </td>
-            <td class="label-td">
-                <input type="text" name="lname" class="input-text" placeholder="Apellido" required>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-                <label for="address" class="form-label">Direccion: </label>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-                <input type="text" name="address" class="input-text" placeholder="Direccion" required>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-                <label for="nic" class="form-label">Identificacion: </label>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-                <input type="text" name="nic" class="input-text" placeholder="Numero de cedula" required>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-                <label for="dob" class="form-label">Fecha de nacimiento: </label>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-                <input type="date" name="dob" class="input-text" required>
-            </td>
-        </tr>
-        <tr>
-            <td class="label-td" colspan="2">
-            </td>
-        </tr>
+    <form action="" method="POST">
+        <table border="0">
+            <tr>
+                <td colspan="2">
+                    <p class="header-text">Empecemos</p>
+                    <p class="sub-text">Añade tus datos personales para continuar</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <label for="name" class="form-label">Nombre: </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td">
+                    <input type="text" name="fname" class="input-text" placeholder="Nombre" required>
+                </td>
+                <td class="label-td">
+                    <input type="text" name="lname" class="input-text" placeholder="Apellido" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <label for="address" class="form-label">Direccion: </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <input type="text" name="address" class="input-text" placeholder="Direccion" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <label for="nic" class="form-label">Identificacion: </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <input type="text" name="nic" class="input-text" placeholder="Numero de cedula" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <label for="dob" class="form-label">Fecha de nacimiento: </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <input type="date" name="dob" class="input-text" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                </td>
+            </tr>
 
-        <tr>
-            <td colspan="2" style="text-align: center;">
-                <button type="button" id="openModal" class="login-btn btn-secondary btn">
-                    Revisar Términos y Condiciones
-                </button>
-            </td>
-        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="button" id="openModal" class="login-btn btn-secondary btn">
+                        Revisar Términos y Condiciones
+                    </button>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <input type="reset" value="Limpiar" class="login-btn btn-primary-soft btn" >
-            </td>
-            <td>
-                <input type="submit" value="Siguiente" class="login-btn btn-primary btn">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <br>
-                <label for="" class="sub-text" style="font-weight: 280;">Ya tienes una cuenta?&#63; </label>
-                <a href="login.php" class="hover-link1 non-style-link">Iniciar sesion</a>
-                <br><br><br>
-            </td>
-        </tr>
-            </form>
-        </tr>
-    </table>
+            <tr>
+                <td>
+                    <input type="reset" value="Limpiar" class="login-btn btn-primary-soft btn" >
+                </td>
+                <td>
+                    <input type="submit" value="Siguiente" class="login-btn btn-primary btn">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br>
+                    <label for="" class="sub-text" style="font-weight: 280;">¿Ya tienes una cuenta&#63; </label>
+                    <a href="login.php" class="hover-link1 non-style-link">Iniciar sesion</a>
+                    <br><br><br>
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>
 </center>
 <!-- Modal --> 
